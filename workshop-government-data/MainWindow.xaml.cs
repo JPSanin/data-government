@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,9 +35,18 @@ namespace workshop_government_data
 
             if (open.ShowDialog() == true)
             {
-                filePath = open.FileName;
-                MessageBox.Show(filePath);
+                
+                loadBtn.Visibility = Visibility.Hidden;
 
+                var path = open.OpenFile();
+                using (StreamReader reader = new StreamReader(path))
+                {
+                    var line = string.Empty;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        MessageBox.Show(line);
+                    }
+                }
             }
 
         }

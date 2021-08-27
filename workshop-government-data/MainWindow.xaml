@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:workshop_government_data"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="loadBtn" HorizontalAlignment="Center" VerticalAlignment="Center" Height="49" Width="104" Click="ButtonLoadFile"> Cargar Archivo</Button>
+        Title="Government Data" Height="450" Width="800">
+    <Grid Margin="10,10,10,10" RenderTransformOrigin="0.499,0.57">
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button x:Name="loadBtn" HorizontalAlignment="Center" VerticalAlignment="Center" Height="49" Width="104" Click="ButtonLoadFile" Visibility="Visible">Cargar Archivo</Button>
     </Grid>
 </Window>
