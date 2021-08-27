@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "workshop-government-data/1.0.0": {
+        "runtime": {
+          "workshop-government-data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "workshop-government-data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

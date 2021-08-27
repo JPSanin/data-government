@@ -1,18 +1,18 @@
 ﻿workshop-government-data
-1.0.0.0
+
 
 winexe
 C#
 .cs
-D:\Semestre 7\Proyecto Integrador\Taller Intro C# .NET\workshop-government-data\obj\Debug\net5.0-windows\
+D:\Semestre 7\Proyecto Integrador\Taller Intro C# .NET\workshop-government-data\obj\Release\net5.0-windows\
 workshop_government_data
 none
 false
-TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+TRACE;RELEASE;NET;NET5_0;NETCOREAPP
 D:\Semestre 7\Proyecto Integrador\Taller Intro C# .NET\workshop-government-data\App.xaml
 11407045341
 
-5-2028840774
+3-1233169557
 193-1891726104
 MainWindow.xaml;
 

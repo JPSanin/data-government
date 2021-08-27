@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace workshop_government_data
 {
@@ -23,6 +24,21 @@ namespace workshop_government_data
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ButtonLoadFile(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter= "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+            var filePath = string.Empty;
+
+            if (open.ShowDialog() == true)
+            {
+                filePath = open.FileName;
+                MessageBox.Show(filePath);
+
+            }
+
         }
     }
 }
