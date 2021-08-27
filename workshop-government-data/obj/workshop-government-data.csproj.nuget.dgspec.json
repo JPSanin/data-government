@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\workshop-government-data.csproj": {}
+  },
+  "projects": {
+    "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\workshop-government-data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\workshop-government-data.csproj",
+        "projectName": "workshop-government-data",
+        "projectPath": "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\workshop-government-data.csproj",
+        "packagesPath": "C:\\Users\\Juan Pablo\\.nuget\\packages\\",
+        "outputPath": "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Juan Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
