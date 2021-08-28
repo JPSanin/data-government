@@ -26,7 +26,7 @@ namespace workshop_government_data
     
     public partial class MainWindow : Window
     {
-
+        private DataTable data;
         
         public MainWindow()
         {
@@ -34,6 +34,8 @@ namespace workshop_government_data
            
 
         }
+
+
 
         
 
@@ -44,7 +46,7 @@ namespace workshop_government_data
             OpenFileDialog open = new OpenFileDialog();
 
             open.Filter= "csv files (*.csv)|*.csv|All files (*.*)|*.*";
-            var filePath = string.Empty;
+           
 
             if (open.ShowDialog() == true)
             {
@@ -56,19 +58,19 @@ namespace workshop_government_data
                 {
                     var line = reader.ReadLine();
                     String[] lineInfoTitles = line.Split(",");
+                    lineInfoTitles[4] = "Tipo";
 
                     dataTable.Columns.Add(lineInfoTitles[0], typeof(String));
                     dataTable.Columns.Add(lineInfoTitles[1], typeof(String));
                     dataTable.Columns.Add(lineInfoTitles[2], typeof(String));
                     dataTable.Columns.Add(lineInfoTitles[3], typeof(String));
-                    dataTable.Columns.Add(lineInfoTitles[4]);
+                    dataTable.Columns.Add(lineInfoTitles[4].Replace("/","-"), typeof(String));
 
 
                     while ((line = reader.ReadLine()) != null)
                     {
 
                         String[] lineInfo = line.Split(",");
-                        //MessageBox.Show(lineInfo[4]);
                         if(lineInfo[0].Length<3)
                         {
                             dataTable.Rows.Add(lineInfo);
@@ -76,11 +78,41 @@ namespace workshop_government_data
 
                     }
                 }
+
+               
                 
                 dataGrid.DataContext = dataTable.DefaultView;
+                data = dataTable;
+
+                cmbType.Items.Add("Tipo");
+                cmbType.SelectedItem = "Tipo";
                 
+                cmbType.Items.Add("Municipio");
+                cmbType.Items.Add("Isla");
+                cmbType.Items.Add("Área no municipalizada");
+                cmbType.Visibility = Visibility.Visible;
+
+
             }
 
+        }
+
+     
+
+        private void cmbType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+
+            if (!cmbType.SelectedItem.ToString().Equals("Tipo"))
+            {
+                data.DefaultView.RowFilter = "Tipo = " + "'" + cmbType.SelectedItem.ToString() + "'";
+                dataGrid.DataContext = data.DefaultView;
+            }
+            else
+            {
+                data.DefaultView.RowFilter = string.Empty;
+            }
+            
         }
     }
 }

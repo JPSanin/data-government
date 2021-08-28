@@ -12,7 +12,8 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Button x:Name="loadBtn" HorizontalAlignment="Center" VerticalAlignment="Center" Height="49" Width="104" Click="ButtonLoadFile" Visibility="Visible">Cargar Archivo</Button>
+        <Button x:Name="loadBtn" HorizontalAlignment="Left" VerticalAlignment="Center" Height="49" Width="104" Click="ButtonLoadFile" Visibility="Visible" Margin="10,0,0,0">Cargar Archivo</Button>
         <DataGrid x:Name="dataGrid" Margin="10,10,10,10" ItemsSource="{Binding}" Grid.Row="1"/>
+        <ComboBox x:Name="cmbType" HorizontalAlignment="Left" Margin="524,0,0,0" VerticalAlignment="Center" Width="237" SelectionChanged="cmbType_SelectionChanged" Text="Tipo" Visibility="Hidden" />
     </Grid>
 </Window>
