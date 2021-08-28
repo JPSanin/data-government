@@ -13,5 +13,6 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Button x:Name="loadBtn" HorizontalAlignment="Center" VerticalAlignment="Center" Height="49" Width="104" Click="ButtonLoadFile" Visibility="Visible">Cargar Archivo</Button>
+        <DataGrid x:Name="dataGrid" Margin="10,10,10,10" ItemsSource="{Binding}" Grid.Row="1"/>
     </Grid>
 </Window>
