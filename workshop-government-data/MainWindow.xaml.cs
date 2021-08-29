@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace workshop_government_data
 {
@@ -23,21 +24,21 @@ namespace workshop_government_data
     /// </summary>
     /// 
 
-    
+
     public partial class MainWindow : Window
     {
         private DataTable data;
-        
+
         public MainWindow()
         {
             InitializeComponent();
-           
+
 
         }
 
 
 
-        
+
 
         private void ButtonLoadFile(object sender, RoutedEventArgs e)
         {
@@ -45,13 +46,14 @@ namespace workshop_government_data
 
             OpenFileDialog open = new OpenFileDialog();
 
-            open.Filter= "csv files (*.csv)|*.csv|All files (*.*)|*.*";
-           
+            open.Filter = "csv files (*.csv)|*.csv|All files (*.*)|*.*";
+
 
             if (open.ShowDialog() == true)
             {
 
                 loadBtn.Visibility = Visibility.Hidden;
+                loadGph.Visibility = Visibility.Visible;
 
                 var path = open.OpenFile();
                 using (StreamReader reader = new StreamReader(path))
@@ -64,14 +66,14 @@ namespace workshop_government_data
                     dataTable.Columns.Add(lineInfoTitles[1], typeof(String));
                     dataTable.Columns.Add(lineInfoTitles[2], typeof(String));
                     dataTable.Columns.Add(lineInfoTitles[3], typeof(String));
-                    dataTable.Columns.Add(lineInfoTitles[4].Replace("/","-"), typeof(String));
+                    dataTable.Columns.Add(lineInfoTitles[4].Replace("/", "-"), typeof(String));
 
 
                     while ((line = reader.ReadLine()) != null)
                     {
 
                         String[] lineInfo = line.Split(",");
-                        if(lineInfo[0].Length<3)
+                        if (lineInfo[0].Length < 3)
                         {
                             dataTable.Rows.Add(lineInfo);
                         }
@@ -79,14 +81,14 @@ namespace workshop_government_data
                     }
                 }
 
-               
-                
+
+
                 dataGrid.DataContext = dataTable.DefaultView;
                 data = dataTable;
 
                 cmbType.Items.Add("Tipo");
                 cmbType.SelectedItem = "Tipo";
-                
+
                 cmbType.Items.Add("Municipio");
                 cmbType.Items.Add("Isla");
                 cmbType.Items.Add("Área no municipalizada");
@@ -97,7 +99,7 @@ namespace workshop_government_data
 
         }
 
-     
+
 
         private void cmbType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -112,7 +114,13 @@ namespace workshop_government_data
             {
                 data.DefaultView.RowFilter = string.Empty;
             }
+
+        }
+
+        private void ButtonLoadGraphic(object sender, RoutedEventArgs e){
             
         }
+
+        
     }
 }

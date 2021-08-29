@@ -20,3 +20,11 @@ D:\Semestre 7\Proyecto Integrador\Taller Intro C# .NET\workshop-government-data\
 D:\Semestre 7\Proyecto Integrador\Taller Intro C# .NET\workshop-government-data\obj\Debug\net5.0-windows\ref\workshop-government-data.dll
 D:\Semestre 7\Proyecto Integrador\Taller Intro C# .NET\workshop-government-data\obj\Debug\net5.0-windows\workshop-government-data.pdb
 D:\Semestre 7\Proyecto Integrador\Taller Intro C# .NET\workshop-government-data\obj\Debug\net5.0-windows\workshop-government-data.genruntimeconfig.cache
+C:\Users\Juan Camilo Calvache\OneDrive - Universidad Icesi (@icesi.edu.co)\Documentos\5to semestre\Proyecto Integrador I\Semana 3\data-government\workshop-government-data\obj\Debug\net5.0-windows\workshop-government-data.csproj.AssemblyReference.cache
+C:\Users\Juan Camilo Calvache\OneDrive - Universidad Icesi (@icesi.edu.co)\Documentos\5to semestre\Proyecto Integrador I\Semana 3\data-government\workshop-government-data\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Juan Camilo Calvache\OneDrive - Universidad Icesi (@icesi.edu.co)\Documentos\5to semestre\Proyecto Integrador I\Semana 3\data-government\workshop-government-data\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Juan Camilo Calvache\OneDrive - Universidad Icesi (@icesi.edu.co)\Documentos\5to semestre\Proyecto Integrador I\Semana 3\data-government\workshop-government-data\obj\Debug\net5.0-windows\workshop-government-data_MarkupCompile.cache
+C:\Users\Juan Camilo Calvache\OneDrive - Universidad Icesi (@icesi.edu.co)\Documentos\5to semestre\Proyecto Integrador I\Semana 3\data-government\workshop-government-data\obj\Debug\net5.0-windows\workshop-government-data_MarkupCompile.lref
+C:\Users\Juan Camilo Calvache\OneDrive - Universidad Icesi (@icesi.edu.co)\Documentos\5to semestre\Proyecto Integrador I\Semana 3\data-government\workshop-government-data\obj\Debug\net5.0-windows\workshop-government-data.dll
+C:\Users\Juan Camilo Calvache\OneDrive - Universidad Icesi (@icesi.edu.co)\Documentos\5to semestre\Proyecto Integrador I\Semana 3\data-government\workshop-government-data\obj\Debug\net5.0-windows\ref\workshop-government-data.dll
+C:\Users\Juan Camilo Calvache\OneDrive - Universidad Icesi (@icesi.edu.co)\Documentos\5to semestre\Proyecto Integrador I\Semana 3\data-government\workshop-government-data\obj\Debug\net5.0-windows\workshop-government-data.pdb

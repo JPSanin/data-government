@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\workshop-government-data.csproj": {}
+    "C:\\Users\\Juan Camilo Calvache\\OneDrive - Universidad Icesi (@icesi.edu.co)\\Documentos\\5to semestre\\Proyecto Integrador I\\Semana 3\\data-government\\workshop-government-data\\workshop-government-data.csproj": {}
   },
   "projects": {
-    "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\workshop-government-data.csproj": {
+    "C:\\Users\\Juan Camilo Calvache\\OneDrive - Universidad Icesi (@icesi.edu.co)\\Documentos\\5to semestre\\Proyecto Integrador I\\Semana 3\\data-government\\workshop-government-data\\workshop-government-data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\workshop-government-data.csproj",
+        "projectUniqueName": "C:\\Users\\Juan Camilo Calvache\\OneDrive - Universidad Icesi (@icesi.edu.co)\\Documentos\\5to semestre\\Proyecto Integrador I\\Semana 3\\data-government\\workshop-government-data\\workshop-government-data.csproj",
         "projectName": "workshop-government-data",
-        "projectPath": "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\workshop-government-data.csproj",
-        "packagesPath": "C:\\Users\\Juan Pablo\\.nuget\\packages\\",
-        "outputPath": "D:\\Semestre 7\\Proyecto Integrador\\Taller Intro C# .NET\\workshop-government-data\\obj\\",
+        "projectPath": "C:\\Users\\Juan Camilo Calvache\\OneDrive - Universidad Icesi (@icesi.edu.co)\\Documentos\\5to semestre\\Proyecto Integrador I\\Semana 3\\data-government\\workshop-government-data\\workshop-government-data.csproj",
+        "packagesPath": "C:\\Users\\Juan Camilo Calvache\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Juan Camilo Calvache\\OneDrive - Universidad Icesi (@icesi.edu.co)\\Documentos\\5to semestre\\Proyecto Integrador I\\Semana 3\\data-government\\workshop-government-data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Juan Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Juan Camilo Calvache\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
