@@ -15,7 +15,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
-using System.Windows.Forms.DataVisualization.Charting;
 
 namespace workshop_government_data
 {
@@ -28,7 +27,9 @@ namespace workshop_government_data
     public partial class MainWindow : Window
     {
         private DataTable data;
-
+        public SeriesCollection SeriesCollection { get; set; }
+        public string[] Labels { get; set; }
+        public Func<double, string> Formatter { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -118,7 +119,23 @@ namespace workshop_government_data
         }
 
         private void ButtonLoadGraphic(object sender, RoutedEventArgs e){
-            
+            using (StreamReader reader = new StreamReader(path))
+            {
+                var line = reader.ReadLine();
+                String[] lineInfoTitles = line.Split(",");
+                lineInfoTitles[4] = "Tipo";
+
+                for (int i = 0; i < lineInfoTitles.length; i++) {
+                    Serie serie = chart1.Series.add(lineInfoTitles[i]);
+                }
+
+
+                while ((line = reader.ReadLine()) != null){ 
+                    
+                }
+
+                
+            }
         }
 
         
