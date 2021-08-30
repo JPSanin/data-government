@@ -1,8 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "eyYweNl6I8F4U+1PO1xkXni743Cg+1ZlraQD0rkRM//XeY9s7VS2v3+UGDL7p/EY0qHw/0BStoOsnp5Dy53ovg==",
+  "dgSpecHash": "7u5Psz+p8K8ZNxOja2N47qikHtX47npGaoxdQ3HuxO0VcC/GJ1RMtHTpX1VMB9+eJkeb4AThfhPdyJawxibrNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Juan Camilo Calvache\\OneDrive - Universidad Icesi (@icesi.edu.co)\\Documentos\\5to semestre\\Proyecto Integrador I\\Semana 3\\data-government\\workshop-government-data\\workshop-government-data.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "C:\\Users\\Juan Camilo Calvache\\Source\\Repos\\data-government\\workshop-government-data\\workshop-government-data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Juan Camilo Calvache\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\Juan Camilo Calvache\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"LiveCharts 0.9.7\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net5.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "LiveCharts",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"LiveCharts.Wpf 0.9.7\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \"net5.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "LiveCharts.Wpf",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
 }

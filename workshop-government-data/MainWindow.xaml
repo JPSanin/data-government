@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:workshop_government_data"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
         Title="Government Data" Height="450" Width="800">
     <Grid Margin="10,10,10,10" RenderTransformOrigin="0.499,0.57">
@@ -18,6 +19,7 @@
         </Grid.RowDefinitions>
         <Button x:Name="loadBtn" HorizontalAlignment="Left" VerticalAlignment="Center" Height="49" Width="104" Click="ButtonLoadFile" Visibility="Visible" Margin="10,0,0,0">Cargar Archivo</Button>
         <Button x:Name="loadGph" HorizontalAlignment="Left" VerticalAlignment="Center" Height="49" Width="104" Click="ButtonLoadGraphic" Visibility="Hidden" Margin="10,0,0,0">Generar grafico</Button>
+        <Button x:Name="loadTable" HorizontalAlignment="Left" VerticalAlignment="Center" Height="49" Width="104" Click="ButtonLoadTable" Visibility="Hidden" Margin="10,0,0,0">Cargar tabla</Button>
         <DataGrid x:Name="dataGrid" Margin="10,10,10,10" ItemsSource="{Binding}" Grid.Row="1" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="cmbType" HorizontalAlignment="Left" Margin="354,0,0,0" VerticalAlignment="Center" Width="237" SelectionChanged="cmbType_SelectionChanged" Text="Tipo" Visibility="Hidden" Grid.Column="1" />
 

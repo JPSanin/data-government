@@ -15,6 +15,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
+using LiveCharts.Wpf;
+using LiveCharts;
+using System.Collections;
 
 namespace workshop_government_data
 {
@@ -148,7 +151,9 @@ namespace workshop_government_data
         private void ButtonLoadGraphic(object sender, RoutedEventArgs e)
         {
             dataGrid.Visibility = Visibility.Hidden;
+            loadTable.Visibility = Visibility.Visible;
             graphic.Visibility = Visibility.Visible;
+            cmbType.Visibility = Visibility.Hidden;
             aux();
         }
 
@@ -184,6 +189,14 @@ namespace workshop_government_data
             Formatter = value => value.ToString("N");
 
             DataContext = this;
+        }
+
+        private void ButtonLoadTable(object sender, RoutedEventArgs e)
+        {
+            dataGrid.Visibility = Visibility.Visible;
+            loadTable.Visibility = Visibility.Hidden;
+            graphic.Visibility = Visibility.Hidden;
+            cmbType.Visibility = Visibility.Visible;
         }
     }
 }
