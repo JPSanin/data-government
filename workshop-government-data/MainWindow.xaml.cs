@@ -27,14 +27,14 @@ namespace workshop_government_data
     public partial class MainWindow : Window
     {
         private DataTable data;
+        private ArrayList departments;
         public SeriesCollection SeriesCollection { get; set; }
         public string[] Labels { get; set; }
         public Func<double, string> Formatter { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
-
-
         }
 
 
@@ -133,7 +133,6 @@ namespace workshop_government_data
         private void cmbType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
-
             if (!cmbType.SelectedItem.ToString().Equals("Tipo"))
             {
                 data.DefaultView.RowFilter = "Tipo = " + "'" + cmbType.SelectedItem.ToString() + "'";
@@ -146,26 +145,6 @@ namespace workshop_government_data
 
         }
 
-        private void ButtonLoadGraphic(object sender, RoutedEventArgs e){
-            using (StreamReader reader = new StreamReader(path))
-            {
-                var line = reader.ReadLine();
-                String[] lineInfoTitles = line.Split(",");
-                lineInfoTitles[4] = "Tipo";
-
-                for (int i = 0; i < lineInfoTitles.length; i++) {
-                    Serie serie = chart1.Series.add(lineInfoTitles[i]);
-                }
-
-
-                while ((line = reader.ReadLine()) != null){ 
-                    
-                }
-
-                
-            }
-        }
-
         private void ButtonLoadGraphic(object sender, RoutedEventArgs e)
         {
             dataGrid.Visibility = Visibility.Hidden;
@@ -173,5 +152,38 @@ namespace workshop_government_data
             aux();
         }
 
+        private void aux()
+        {
+            //get departments
+            string[] departmentsOnly = new string[departments.Count];
+            for (int i = 0; i < departments.Count; i++)
+            {
+                string[] temp = (string[])departments[i];
+                departmentsOnly[i] = temp[0];
+            }
+
+            //get municipies
+            double[] quantityOnly = new double[departments.Count];
+            for (int i = 0; i < departments.Count; i++)
+            {
+                string[] temp = (string[])departments[i];
+                double quantity = double.Parse(temp[1]);
+                quantityOnly[i] = quantity;
+            }
+
+            SeriesCollection = new SeriesCollection
+            {
+                new RowSeries
+                {
+                    Title = "Cantidad de municipios",
+                    Values = new ChartValues<double> (quantityOnly)
+                }
+            };
+
+            Labels = departmentsOnly;
+            Formatter = value => value.ToString("N");
+
+            DataContext = this;
+        }
     }
 }
