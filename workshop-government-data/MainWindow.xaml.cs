@@ -166,6 +166,12 @@ namespace workshop_government_data
             }
         }
 
-        
+        private void ButtonLoadGraphic(object sender, RoutedEventArgs e)
+        {
+            dataGrid.Visibility = Visibility.Hidden;
+            graphic.Visibility = Visibility.Visible;
+            aux();
+        }
+
     }
 }
