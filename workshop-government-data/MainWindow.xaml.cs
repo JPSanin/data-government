@@ -43,6 +43,8 @@ namespace workshop_government_data
 
         private void ButtonLoadFile(object sender, RoutedEventArgs e)
         {
+            departments = new ArrayList();
+
             var dataTable = new DataTable();
 
             OpenFileDialog open = new OpenFileDialog();
@@ -60,23 +62,49 @@ namespace workshop_government_data
                 using (StreamReader reader = new StreamReader(path))
                 {
                     var line = reader.ReadLine();
-                    String[] lineInfoTitles = line.Split(",");
+                    string[] lineInfoTitles = line.Split(",");
                     lineInfoTitles[4] = "Tipo";
 
-                    dataTable.Columns.Add(lineInfoTitles[0], typeof(String));
-                    dataTable.Columns.Add(lineInfoTitles[1], typeof(String));
-                    dataTable.Columns.Add(lineInfoTitles[2], typeof(String));
-                    dataTable.Columns.Add(lineInfoTitles[3], typeof(String));
-                    dataTable.Columns.Add(lineInfoTitles[4].Replace("/", "-"), typeof(String));
+                    dataTable.Columns.Add(lineInfoTitles[0], typeof(string));
+                    dataTable.Columns.Add(lineInfoTitles[1], typeof(string));
+                    dataTable.Columns.Add(lineInfoTitles[2], typeof(string));
+                    dataTable.Columns.Add(lineInfoTitles[3], typeof(string));
+                    dataTable.Columns.Add(lineInfoTitles[4].Replace("/", "-"), typeof(string));
 
 
                     while ((line = reader.ReadLine()) != null)
                     {
 
-                        String[] lineInfo = line.Split(",");
+                        string[] lineInfo = line.Split(",");
                         if (lineInfo[0].Length < 3)
                         {
                             dataTable.Rows.Add(lineInfo);
+                        }
+
+                        //Suponiendo que el array list departments posee arreglos de tamaño 1,
+                        //donde en la posicion 0 esta el nombre del departamento y en la posicion 1 la cantidad
+                        bool exist = false;
+                        for (int i = 0; i < departments.Count; i++)
+                        {
+                            string[] actuallyArray = (string[])departments[i];
+                            string actually = actuallyArray[0];
+                            if (actually.Equals(lineInfo[2]))
+                            {
+                                string[] x = (string[])departments[i];
+                                int num = int.Parse(x[1]) + 1;
+
+                                string[] y = (string[])departments[i];
+                                y[1] = num.ToString();
+                                departments[i] = y;
+                                //departments[i].[1] = num.ToString;
+                                exist = true;
+                            }
+                        }
+
+                        if (!exist)
+                        {
+                            string[] newDeparment = { lineInfo[2], "1" };
+                            departments.Add(newDeparment);
                         }
 
                     }
