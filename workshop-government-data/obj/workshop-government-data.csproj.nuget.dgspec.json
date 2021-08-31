@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan Camilo Calvache\\Source\\Repos\\data-government\\workshop-government-data\\workshop-government-data.csproj": {}
+    "C:\\Users\\Juan Camilo Calvache\\source\\repos\\data-government\\workshop-government-data\\workshop-government-data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan Camilo Calvache\\Source\\Repos\\data-government\\workshop-government-data\\workshop-government-data.csproj": {
+    "C:\\Users\\Juan Camilo Calvache\\source\\repos\\data-government\\workshop-government-data\\workshop-government-data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan Camilo Calvache\\Source\\Repos\\data-government\\workshop-government-data\\workshop-government-data.csproj",
+        "projectUniqueName": "C:\\Users\\Juan Camilo Calvache\\source\\repos\\data-government\\workshop-government-data\\workshop-government-data.csproj",
         "projectName": "workshop-government-data",
-        "projectPath": "C:\\Users\\Juan Camilo Calvache\\Source\\Repos\\data-government\\workshop-government-data\\workshop-government-data.csproj",
+        "projectPath": "C:\\Users\\Juan Camilo Calvache\\source\\repos\\data-government\\workshop-government-data\\workshop-government-data.csproj",
         "packagesPath": "C:\\Users\\Juan Camilo Calvache\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan Camilo Calvache\\Source\\Repos\\data-government\\workshop-government-data\\obj\\",
+        "outputPath": "C:\\Users\\Juan Camilo Calvache\\source\\repos\\data-government\\workshop-government-data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan Camilo Calvache\\AppData\\Roaming\\NuGet\\NuGet.Config",

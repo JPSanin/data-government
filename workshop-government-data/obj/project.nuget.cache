@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7u5Psz+p8K8ZNxOja2N47qikHtX47npGaoxdQ3HuxO0VcC/GJ1RMtHTpX1VMB9+eJkeb4AThfhPdyJawxibrNQ==",
+  "dgSpecHash": "kIp5VkOBwQ5pD1mQIXjkSmwe9MqIEk014lq00hpB77pqgB9M5x7VqF//WBam6Dm3OpzbjYxAkjJbLot7JSq9MA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Juan Camilo Calvache\\Source\\Repos\\data-government\\workshop-government-data\\workshop-government-data.csproj",
+  "projectFilePath": "C:\\Users\\Juan Camilo Calvache\\source\\repos\\data-government\\workshop-government-data\\workshop-government-data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juan Camilo Calvache\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
     "C:\\Users\\Juan Camilo Calvache\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"

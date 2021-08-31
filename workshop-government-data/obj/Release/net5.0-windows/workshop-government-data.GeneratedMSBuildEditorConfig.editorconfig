@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = workshop_government_data
-build_property.ProjectDir = C:\Users\Juan Camilo Calvache\Source\Repos\data-government\workshop-government-data\
+build_property.ProjectDir = C:\Users\Juan Camilo Calvache\source\repos\data-government\workshop-government-data\
